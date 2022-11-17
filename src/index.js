@@ -4,16 +4,14 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './navbar.js';
 import Card from './card.js';
 import './index.css';
+import Test from './test';
+import App from './app';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(<React.StrictMode>
               <Navbar/>
               <div className='gamemodes'>
-                <Card img = "/images/sing-icon-placeholder.png" gamemode = "Hiphop" minPlayers = "2" maxPlayers = "4" description = "Rap songs from 2010"/>
-                <Card img = "/images/sing-icon-placeholder.png" gamemode = "Hiphop" minPlayers = "2" maxPlayers = "4" description = "Rap songs from 2010"/>
-                <Card img = "/images/sing-icon-placeholder.png" gamemode = "Hiphop" minPlayers = "2" maxPlayers = "4" description = "Rap songs from 2010"/>
-                <Card img = "/images/sing-icon-placeholder.png" gamemode = "Hiphop" minPlayers = "2" maxPlayers = "4" description = "Rap songs from 2010"/>
+                <App/>
               </div>
             </React.StrictMode>);
 

@@ -19,17 +19,25 @@ body{
     padding-left: 5px;
 }
 .gamemodes{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-
-    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+    /* align-items: stretch; */
 }
 .card{
+    border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* border-color: red; */
-    /* border-style: dashed; */
-    /* border-width: 1px; */
     width: 180px;
+    padding-left: 5px;
+    margin: 5px;
+}
+.card-presentation{
+    min-height: 30%;
+}
+
+.card-presentation>*{
+    margin: 2px;
 }
 
 .card:hover{
