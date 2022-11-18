@@ -2,11 +2,14 @@ import gamemodesData from './gamemodes.js'
 import Card from './card';
 
 console.log(gamemodesData);
-let gmCards = gamemodesData.map((gm) => { return <Card props = {`${gm}`}></Card> });
+const gmCards = gamemodesData.map(gm =>{
+        return <Card gamemode = {gm.gamemode} description = {gm.description} img = {gm.img} minPlayers = {gm.minPlayers} maxPlayers = {gm.maxPlayers} ></Card> 
+    });
+
 console.log("Cards",gmCards);
 export default function App(){
     return(
-        <div>
+        <div className='gamemodes'>
             {gmCards}
         </div>
     );
