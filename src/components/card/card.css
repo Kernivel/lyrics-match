@@ -1,0 +1,16 @@
+.card{
+    text-align: center;
+}
+
+.card--artist{
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: .2ch;
+    font-weight: 1000;
+}
+
+.card--title{
+    font-size: 45px;
+    margin: 0;
+    font-weight: 200;
+}
