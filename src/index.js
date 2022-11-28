@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './navbar.js';
-import Card from './card.js';
+import Navbar from './components/navbar/navbar.js';
 import './index.css';
-import Test from './test';
-import App from './app';
+import Game from './components/game/game';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<React.StrictMode>
-              <Navbar/>
-              <div className='gamemodes'>
-                <App/>
-              </div>
+              <Game/>
             </React.StrictMode>);
 
 

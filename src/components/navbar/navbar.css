@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.navbar--logo{
+    width: 50px;
+}
+
+.navbar--title{
+    font-family: Pacifico;
+    font-weight: 300;
+}
