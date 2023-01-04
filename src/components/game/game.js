@@ -33,11 +33,37 @@ export default function Game(){
         })
     }
 
+    function retry()
+    {
+        setCardIndex(()=>{
+            return 0
+        })
+
+        setGuesses((prevGuesses)=>{
+            return {
+                ...prevGuesses,
+                wrong:0,
+                correct:0
+            }
+        })
+    }
+
     return(
-        <div className='game'>
-            {cardIndex<cardsData.length && <div className='wrongGuessButton' onClick = {wrongGuess}></div>}
-                {cardIndex<cardsData.length?<Card {...cardsData[cardIndex]}/>:<GameOver {...guesses}/>}
-            {cardIndex<cardsData.length && <div className='correctGuessButton' onClick = {correctGuess}></div>}
+        <div className='window'>
+        { cardIndex<cardsData.length && 
+            <div className='game'>
+            <div className='wrongGuessButton' onClick = {wrongGuess}></div>
+            <Card {...cardsData[cardIndex]}/>
+            <div className='correctGuessButton' onClick = {correctGuess}></div>
+            </div>
+        }
+        { cardIndex>=cardsData.length &&
+            <div className='endGame'>
+                <GameOver {...guesses}/>
+                <div className='retryButton' onClick = {retry}></div>
+            </div>
+        }
+
         </div>
     );
 }
