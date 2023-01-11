@@ -1,34 +1,82 @@
 
-.wrongGuessButton{
-    background-color: red;
+.wrongGuessButton
+{
+    background-color: rgb(165, 18, 18);
+    
+}
+.smallButton>img
+{
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    
+}
+.retryButton
+{
+    background-color: rgb(44, 25, 90);
+    margin: auto
+}
+
+.retryButton:hover
+{
+    background-color: rgb(104, 63, 198);
+}
+
+
+.nextPlayerButton
+{
+    background-color: rgb(23, 23, 23);
+}
+
+.correctGuessButton
+{
+    background-color: rgb(20, 82, 20);
+}
+
+.correctGuessButton:hover
+{
+    background-color: rgb(15, 201, 15);
+}
+
+.wrongGuessButton:hover
+{
+    background-color: rgb(246, 62, 62);
+}
+
+.nextPlayerButton:hover
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.smallButton
+{
     width: 50px;
     height: 50px;
     margin-right: auto;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.retryButton{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    margin-right: auto;
-    border-radius: 50px;
+.smallButton:hover
+{
+    width: 60px;
+    height: 60px;
 }
 
-.nextPlayerButton{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    margin-right: auto;
-    border-radius: 50px;
+.wrongGuess
+{
+    color: rgb(120, 120, 120);
 }
 
-.correctGuessButton{
-    background-color: green;
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    border-radius: 50px;
+.correctGuess
+{
+    color: rgb(255, 255, 255);
+}
+
+.guesses>ul
+{
+    list-style-type: none;
 }
 
 

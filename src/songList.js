@@ -3,7 +3,8 @@ const data =  [
         artist: "Les Jones",
         title: "Burgers",
         firstLyrics: "Can I get some burgers",
-        secondLyrics: "With some peanut butter"
+        secondLyrics: "With some peanut butter",
+        genre: ["Folk"]
     },   
     {
         artist: "Harry Styles",
